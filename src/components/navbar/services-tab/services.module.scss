@@ -1,0 +1,96 @@
+.tab {
+  position: relative;
+  button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+.dropdown {
+  position: fixed;
+  width: 100vw;
+  max-height: calc(100vh - 65px);
+  top: 65px;
+  left: 0;
+  background: var(--bg-dark);
+  color: #fff;
+  height: fit-content;
+  overflow: hidden;
+  z-index: 100;
+  overflow-y: scroll !important;
+}
+
+.dropdown > div {
+  position: relative;
+  .close {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 2;
+    height: unset !important;
+    width: unset !important;
+    font-size: 25px;
+    background: none;
+    color: red;
+    padding: 0 !important;
+    &::before {
+      width: 0 !important;
+    }
+  }
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.service {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  background: #202020;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-collapse: collapse;
+  border-radius: 20px;
+
+  a {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    height: unset !important;
+    &::before {
+      width: 0 !important;
+    }
+    &:hover {
+      background: transparent !important;
+    }
+  }
+
+  h4 {
+    font-size: 16px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.25);
+  }
+  p {
+    font-size: 13px;
+  }
+
+  &:hover {
+    background: #000;
+  }
+}
+
+.tab .active {
+  color: var(--primary);
+  background: var(--hover);
+  &::before {
+    width: 100%;
+  }
+}

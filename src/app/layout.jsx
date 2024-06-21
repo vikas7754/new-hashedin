@@ -1,4 +1,6 @@
+import Layout from "@/components/layout";
 import "./globals.scss";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
 export const metadata = {
   title: "Software Platforms Engineering Services | Data Engineering & AI ML",
@@ -9,7 +11,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Layout>{children}</Layout>
+      </body>
     </html>
   );
 }
