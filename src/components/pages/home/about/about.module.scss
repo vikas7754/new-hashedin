@@ -1,0 +1,302 @@
+.about {
+  background: url("https://hashedin.com/wp-content/uploads/2022/11/del-se-services-bg.png");
+  > div {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.left,
+.right {
+  flex: 1;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 5vw 0;
+  h3 {
+    font-size: clamp(1.3rem, 5vw, 1.8rem);
+    color: #fff;
+  }
+  h4 {
+    font-size: clamp(1rem, 5vw, 1.3rem);
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+.right {
+  img {
+    max-height: calc(100vh - 100px);
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    > div {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+.about_1 {
+  background: url("https://hashedin.com/wp-content/uploads/2022/11/engineering-advantage-bg.png")
+    no-repeat center center/cover;
+  padding: 6vw 0;
+  color: #fff;
+}
+
+.box,
+.box_1 {
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 40px 20px;
+  border-radius: 20px;
+  text-align: center;
+  h3 {
+    font-size: clamp(1.1rem, 5vw, 1.6rem);
+  }
+  p {
+    opacity: 0.7;
+    max-width: 700px;
+  }
+}
+
+.box_1 {
+  background: transparent;
+  backdrop-filter: none;
+  padding-bottom: 0;
+}
+
+.image {
+  background: var(--bg-dark);
+  color: #fff;
+  padding: 5vw 0;
+  h3 {
+    font-size: clamp(1.1rem, 5vw, 1.6rem);
+    text-align: center;
+    padding-bottom: 5vw;
+    span {
+      color: var(--primary);
+    }
+  }
+}
+
+.boxes {
+  background: var(--bg-dark);
+  color: #fff;
+  padding: 3vw 0;
+  > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+}
+
+.box_2 {
+  flex: 1 1 300px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  max-width: fit-content;
+  img {
+    height: 30px;
+  }
+}
+
+.card {
+  background: var(--bg-dark);
+  color: #fff;
+  padding: 5vw 0;
+}
+
+.card_box {
+  background: url("https://hashedin.com/wp-content/uploads/2023/08/Group-226.png")
+    no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  padding: 5vw;
+  gap: 2rem;
+  .card_left {
+    max-width: 35%;
+    h3 {
+      font-size: clamp(1.1rem, 5vw, 1.6rem);
+    }
+  }
+  .card_right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    p {
+      padding-left: 20px;
+      border-left: 3px solid #fff;
+    }
+  }
+}
+
+.analyst {
+  background: var(--bg-dark);
+  color: #fff;
+}
+
+.analyst_content {
+  background: url("https://hashedin.com/wp-content/uploads/2024/01/motif_bg.png")
+    no-repeat;
+  background-position: center top, bottom;
+  padding: 5vw 0;
+  background-size: 49.1875rem 39.70344rem, 108rem 25.5625rem;
+  > div {
+    display: flex;
+    gap: 2rem;
+  }
+  h3 {
+    font-size: clamp(1.1rem, 5vw, 1.6rem);
+    text-align: center;
+    padding-bottom: 11rem;
+  }
+}
+
+.analyst_card {
+  padding: 3vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 20px;
+  height: fit-content;
+  &:nth-child(2) {
+    margin-top: 15rem;
+  }
+  img {
+    width: 100%;
+    max-width: 200px;
+  }
+  p {
+    max-width: 300px;
+  }
+  a {
+    color: var(--primary);
+    text-decoration: none;
+    align-items: center;
+    gap: 5px;
+    display: flex;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s;
+  }
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    a {
+      visibility: visible;
+      transform: translateY(0);
+    }
+  }
+}
+
+.about_2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5vw 0;
+  h3 {
+    font-size: clamp(1.1rem, 5vw, 1.6rem);
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    opacity: 0.7;
+  }
+  h4 {
+    color: var(--primary);
+    font-size: clamp(1rem, 5vw, 1.4rem);
+  }
+}
+
+.about_2_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  > div {
+    flex: 1 1 calc(25% - 1rem);
+    height: 30rem;
+    padding: 20px;
+    display: flex;
+    p {
+      color: #fff;
+    }
+    &:nth-child(1) {
+      background: url("https://hashedin.com/wp-content/uploads/2023/08/Group-227.png")
+        no-repeat center center/cover;
+    }
+    &:nth-child(2) {
+      background: url("https://hashedin.com/wp-content/uploads/2023/08/Group-228.png")
+        no-repeat center center/cover;
+    }
+    &:nth-child(3) {
+      background: url("https://hashedin.com/wp-content/uploads/2023/08/Group-229.png")
+        no-repeat center center/cover;
+    }
+    &:nth-child(4) {
+      background: url("https://hashedin.com/wp-content/uploads/2023/08/Group-230.png")
+        no-repeat center center/cover;
+    }
+    &:nth-child(even) {
+      align-items: flex-end;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about_2_cards {
+    > div {
+      flex: 1 1 calc(50% - 1rem);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card_box {
+    flex-direction: column;
+    gap: 1rem;
+    .card_left {
+      max-width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+  .box_2 {
+    max-width: unset;
+  }
+  .analyst_content {
+    > div {
+      flex-direction: column;
+    }
+    h3 {
+      padding-bottom: 26rem;
+    }
+  }
+  .analyst_card {
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+  .about_2_cards {
+    > div {
+      flex: 1 1 100%;
+    }
+  }
+}

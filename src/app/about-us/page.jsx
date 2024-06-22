@@ -35,7 +35,7 @@ function page() {
       </div>
       <hr />
       <div>
-        <h2 style={stylesh1}>Before</h2>
+        <h2 style={stylesh1}>After</h2>
         <div>
           <img
             src="https://res.cloudinary.com/freecodez/image/upload/v1719027256/images/z2bpznqkefz3rob2fshh.webp"

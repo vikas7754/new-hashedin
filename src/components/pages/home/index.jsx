@@ -1,5 +1,6 @@
 "use client";
 
+import AboutSection from "./about";
 import HeroSection from "./hero-section";
 import Services from "./services";
 
@@ -8,6 +9,7 @@ function HomePage() {
     <div>
       <HeroSection />
       <Services />
+      <AboutSection />
     </div>
   );
 }
