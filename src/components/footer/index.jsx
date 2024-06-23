@@ -10,6 +10,7 @@ import {
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import GotoTopButton from "../basic-ui/goto-top-button";
 
 const items = [
   {
@@ -122,6 +123,9 @@ function Footer() {
           </Link>
         </div>
         <div className={styles.content}>
+          <div className={styles.goto_top}>
+            <GotoTopButton />
+          </div>
           <div className={styles.address}>
             <h4>
               <FontAwesomeIcon icon={faBuilding} />

@@ -2,7 +2,11 @@ import MotionDiv from "@/components/motion-div";
 import styles from "./about.module.scss";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faVideo } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowRight,
+  faChevronRight,
+  faVideo,
+} from "@fortawesome/free-solid-svg-icons";
 
 function AboutSection() {
   return (
@@ -146,7 +150,7 @@ function AboutSection() {
       </div>
       <div className={styles.analyst}>
         <div className="container">
-          <div className={styles.analyst_content}>
+          <MotionDiv className={styles.analyst_content}>
             <h3>Analyst Recognition</h3>
             <div>
               <div className={styles.analyst_card}>
@@ -192,24 +196,30 @@ function AboutSection() {
                 </Link>
               </div>
             </div>
-          </div>
+          </MotionDiv>
         </div>
       </div>
 
       <div className="container">
         <div className={styles.about_2}>
-          <h3>Streamline Delivery. Break Down Bottlenecks!</h3>
-          <p>
-            The unprecedented pace and breadth of innovation are creating
-            opportunities across the software engineering solutions life cycle,
-            including how software is developed, deployed, commercialized, and
-            scaled. Our approach and delivery models ensure you have the
-            flexibility to experiment, rigor to deliver, and architecture to
-            scale.
-          </p>
+          <MotionDiv>
+            <h3>Streamline Delivery. Break Down Bottlenecks!</h3>
+          </MotionDiv>
+          <MotionDiv>
+            <p>
+              The unprecedented pace and breadth of innovation are creating
+              opportunities across the software engineering solutions life
+              cycle, including how software is developed, deployed,
+              commercialized, and scaled. Our approach and delivery models
+              ensure you have the flexibility to experiment, rigor to deliver,
+              and architecture to scale.
+            </p>
+          </MotionDiv>
           <hr />
-          <h4>Why we are different</h4>
-          <div className={styles.about_2_cards}>
+          <MotionDiv>
+            <h4>Why we are different</h4>
+          </MotionDiv>
+          <MotionDiv className={styles.about_2_cards}>
             <div>
               <p>
                 Core engineering capabilities with deep industry/sector and
@@ -236,9 +246,77 @@ function AboutSection() {
                 modern pod-based delivery model)
               </p>
             </div>
-          </div>
+          </MotionDiv>
         </div>
       </div>
+      <MotionDiv className={styles.bottom_rating}>
+        <div className="container">
+          <div className={styles.rating}>
+            <div className={styles.images}>
+              <div className={styles.b_img_1}>
+                <img
+                  src="https://hashedin.com/wp-content/uploads/2023/12/CertificationBadge-Aug-2023-2024.png"
+                  alt="image 1"
+                  width="100%"
+                />
+              </div>
+              <div className={styles.b_img_2}>
+                <img
+                  src="https://hashedin.com/wp-content/uploads/2023/12/2.-Indias-Best-Workplaces-in-IT-IT-BPM-1.png"
+                  alt="image 2"
+                  width="100%"
+                />
+                <img
+                  src="https://hashedin.com/wp-content/uploads/2022/11/top25.png"
+                  alt="img 1"
+                  width="100%"
+                />
+              </div>
+            </div>
+            <div>
+              <p>We are Great Place to Work certified five years in a row!</p>
+            </div>
+          </div>
+          <div className={styles.glassdoor}>
+            <img
+              src="http://hashedin.com/wp-content/uploads/2023/12/glassdoor-rating.png"
+              alt="glassdoor-rating"
+            />
+          </div>
+        </div>
+      </MotionDiv>
+      <MotionDiv className={styles.bottom_about}>
+        <div className="container">
+          <MotionDiv motion="right" className={styles.about_left}>
+            <img
+              src="https://hashedin.com/wp-content/uploads/2022/11/impact-1.png"
+              alt="image"
+              width="100%"
+            />
+          </MotionDiv>
+          <MotionDiv index={1} className={styles.about_right}>
+            <h3>What Impact Will You Make?</h3>
+            <p>
+              Are you a problem solver looking for more than a job? HashedIn by
+              Deloitte is where you'll find unrivalled opportunities in software
+              engineering to unleash your true potential. From learning to
+              leadership, this is your chance to take your career to the next
+              level!
+            </p>
+            <p>
+              With the agility of a start-up and the opportunities of an
+              enterprise, at HashedIn, every day your work will make an impact
+              that matters!
+            </p>
+            <div>
+              <Link href={"/"} className="btn-primary">
+                <span>See current job openings</span>
+                <FontAwesomeIcon icon={faChevronRight} />
+              </Link>
+            </div>
+          </MotionDiv>
+        </div>
+      </MotionDiv>
     </>
   );
 }
